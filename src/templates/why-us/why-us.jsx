@@ -28,12 +28,17 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
+  h3 {
+    font-weight: 400;
+  }
+
   ${({ theme }) => theme.mq.desktop} {
     justify-content: center;
     margin-bottom: 30px;
 
     h3 {
       margin: 0 auto 40px;
+      font-weight: 400;
     }
   }
 `;

@@ -1,4 +1,5 @@
 import React from "react";
+import About from "templates/about/about";
 import Hero from "templates/hero/hero";
 import Offer from "templates/offer/offer";
 import Welcome from "templates/welcome/welcome";
@@ -11,6 +12,7 @@ const MainPage = () => {
       <Welcome />
       <WhyUs />
       <Offer />
+      <About />
     </>
   );
 };

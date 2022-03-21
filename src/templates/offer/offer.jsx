@@ -17,6 +17,7 @@ const HeaderWrapper = styled.div`
   align-items: center;
 
   h3 {
+    font-weight: 400;
     font-family: ${({ theme }) => theme.font.family.cormorant};
     font-size: ${({ theme }) => theme.font.size.headingSmall};
   }
@@ -47,7 +48,6 @@ const ButtonsWrapper = styled.div`
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
   width: 90%;
@@ -63,6 +63,7 @@ const ContentWrapper = styled.div`
     grid-template-rows: 1fr 1fr;
     width: 80%;
     margin: 0 auto;
+    position: relative;
 
     img {
       height: 90%;
