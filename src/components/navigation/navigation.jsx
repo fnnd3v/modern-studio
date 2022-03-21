@@ -6,11 +6,17 @@ import InstagramIcon from "assets/icons/instagram.png";
 import LogoIcon from "assets/icons/image1.svg";
 
 const OuterWrapper = styled.div`
-  position: relative;
+  position: absolute;
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+`;
+
+const Logo = styled.img`
+  width: 50px;
+  height: 50px;
 `;
 
 const Wrapper = styled.div`
@@ -31,12 +37,11 @@ const Wrapper = styled.div`
     flex-direction: row;
     height: 10vh;
     background-color: transparent;
-  }
-`;
 
-const Logo = styled.img`
-  width: 50px;
-  height: 50px;
+    ${Logo} {
+      display: none;
+    }
+  }
 `;
 
 const StyledNav = styled.nav`
@@ -45,6 +50,7 @@ const StyledNav = styled.nav`
     text-align: center;
     font-family: ${({ theme }) => theme.font.family.cormorant};
     font-size: ${({ theme }) => theme.font.size.mobileNav};
+    color: ${({ theme }) => theme.color.beige};
     li {
       margin: 40px 0;
     }
@@ -129,7 +135,7 @@ const Navigation = () => {
         <div />
       </StyledBurger>
       <Wrapper isOpen={isOpen}>
-        <Logo src={LogoIcon} />
+        <Logo src={LogoIcon} isOpen={isOpen} />
         <StyledNav>
           <ul>
             <li>Oferty</li>

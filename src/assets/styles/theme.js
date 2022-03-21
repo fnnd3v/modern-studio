@@ -29,17 +29,16 @@ export const theme = {
     huge: "@media(min-width: 1440px)",
   },
 
-  beforeElement: (height, width) => {
+  beforeElement: (height, width) =>
     css`
       &::before {
         content: "";
-        height: ${height};
-        width: ${width};
+        height: ${height}px;
+        width: ${width}px;
         position: absolute;
         background-color: red;
         top: -30px;
         left: -20px;
       }
-    `;
-  },
+    `,
 };

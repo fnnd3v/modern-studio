@@ -14,6 +14,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   
   body {
