@@ -1,3 +1,4 @@
+import Footer from "components/footer/footer";
 import Navigation from "components/navigation/navigation";
 import React from "react";
 import styled from "styled-components";
@@ -12,6 +13,7 @@ const MainTemplate = ({ children }) => {
     <Wrapper>
       <Navigation />
       {children}
+      <Footer />
     </Wrapper>
   );
 };

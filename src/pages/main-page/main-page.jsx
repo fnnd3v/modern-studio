@@ -1,5 +1,6 @@
 import React from "react";
 import About from "templates/about/about";
+import Contact from "templates/contact/contact";
 import Hero from "templates/hero/hero";
 import Offer from "templates/offer/offer";
 import Opinions from "templates/opinions/opinions";
@@ -17,6 +18,7 @@ const MainPage = () => {
       <About />
       <Team />
       <Opinions />
+      <Contact />
     </>
   );
 };
