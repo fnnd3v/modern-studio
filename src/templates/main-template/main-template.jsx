@@ -1,12 +1,8 @@
+import React from "react";
+
 import Footer from "components/footer/footer";
 import Navigation from "components/navigation/navigation";
-import React from "react";
-import styled from "styled-components";
-
-const Wrapper = styled.div`
-  overflow: hidden;
-  max-width: 100vw;
-`;
+import { Wrapper } from "./main-template.styles";
 
 const MainTemplate = ({ children }) => {
   return (

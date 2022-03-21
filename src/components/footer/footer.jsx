@@ -1,41 +1,14 @@
 import React from "react";
-import styled from "styled-components";
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 30px;
-  position: relative;
-  margin-top: 40px;
+import {
+  HeaderWrapper,
+  LinksWrapper,
+  SocialIcons,
+  Wrapper,
+} from "./footer.styles";
 
-  ${({ theme }) => theme.mq.desktop} {
-    width: 70%;
-    margin: 60px auto 10px;
-  }
-`;
-const HeaderWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-`;
-const SocialIcons = styled.div`
-  display: flex;
-
-  ${({ theme }) => theme.mq.desktop} {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
-`;
-const LinksWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  p {
-    margin: 7px;
-  }
-`;
+import FacebookIcon from "assets/icons/facebook.png";
+import InstagramIcon from "assets/icons/instagram.png";
 
 const Footer = () => {
   return (
@@ -43,8 +16,8 @@ const Footer = () => {
       <HeaderWrapper>
         <h4>Modern Studio</h4>
         <SocialIcons>
-          <p>face</p>
-          <p>insta</p>
+          <img src={FacebookIcon} alt="facebook icon" />
+          <img src={InstagramIcon} alt="instagram icon" />
         </SocialIcons>
       </HeaderWrapper>
       <LinksWrapper>
