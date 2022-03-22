@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import OfferPage from "pages/offer-page/offer-page";
 import Realizations from "pages/realizations/realizations";
+import Team from "pages/team/team";
 
 const Root = () => {
   return (
@@ -26,6 +27,7 @@ const Root = () => {
               <Route path=":type" />
             </Route>
             <Route path="/realizacja" element={<Realizations />} />
+            <Route path="/zespol" element={<Team />} />
           </Routes>
         </MainTemplate>
       </ThemeProvider>

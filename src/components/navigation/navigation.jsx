@@ -45,7 +45,7 @@ const Navigation = () => {
             <StyledLink onClick={() => setIsOpen(false)} to="/realizacja">
               Realizacja
             </StyledLink>
-            <StyledLink onClick={() => setIsOpen(false)} to="/team">
+            <StyledLink onClick={() => setIsOpen(false)} to="/zespol">
               Zespół
             </StyledLink>
             <StyledLink onClick={() => setIsOpen(false)} to="/uslugi">
