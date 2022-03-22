@@ -11,6 +11,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import OfferPage from "pages/offer-page/offer-page";
+import Realizations from "pages/realizations/realizations";
 
 const Root = () => {
   return (
@@ -19,10 +20,12 @@ const Root = () => {
         <GlobalStyle />
         <MainTemplate>
           <Routes>
+            <Route path="*" element={<Navigate to="/strona-glowna" />} />
             <Route path="/strona-glowna" element={<MainPage />} />
             <Route path="/oferty" element={<OfferPage />}>
               <Route path=":type" />
             </Route>
+            <Route path="/realizacja" element={<Realizations />} />
           </Routes>
         </MainTemplate>
       </ThemeProvider>
