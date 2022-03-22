@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import { Link } from "react-router-dom";
-
 import {
   Logo,
   OuterWrapper,
@@ -38,7 +36,10 @@ const Navigation = () => {
             <StyledLink onClick={() => setIsOpen(false)} to="/strona-glowna">
               Strona główna
             </StyledLink>
-            <StyledLink onClick={() => setIsOpen(false)} to="/oferty">
+            <StyledLink
+              onClick={() => setIsOpen(false)}
+              to="/oferty/mieszkania"
+            >
               Oferty
             </StyledLink>
             <StyledLink onClick={() => setIsOpen(false)} to="/realizacja">
