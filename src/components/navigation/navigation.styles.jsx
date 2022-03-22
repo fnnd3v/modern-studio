@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 export const OuterWrapper = styled.div`
   position: absolute;
   display: flex;
@@ -26,6 +28,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 25px;
+  z-index: 9999;
 
   ${({ theme }) => theme.mq.desktop} {
     display: flex;
@@ -46,9 +49,8 @@ export const StyledNav = styled.nav`
     font-family: ${({ theme }) => theme.font.family.cormorant};
     font-size: ${({ theme }) => theme.font.size.mobileNav};
     color: ${({ theme }) => theme.color.black};
-    li {
-      margin: 40px 0;
-    }
+    display: flex;
+    flex-direction: column;
   }
 
   ${({ theme }) => theme.mq.desktop} {
@@ -57,11 +59,7 @@ export const StyledNav = styled.nav`
     ul {
       color: ${({ theme }) => theme.color.beige};
       display: flex;
-
-      li {
-        margin: 0 20px;
-        cursor: pointer;
-      }
+      flex-direction: row;
     }
   }
 `;
@@ -87,6 +85,7 @@ export const StyledBurger = styled.button`
   margin: 20px;
   display: flex;
   flex-direction: column;
+  padding: 10px;
   justify-content: space-around;
   width: 2rem;
   height: 2rem;
@@ -94,7 +93,7 @@ export const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
+  z-index: 9999999999;
 
   &:focus {
     outline: none;
@@ -112,5 +111,16 @@ export const StyledBurger = styled.button`
 
   ${({ theme }) => theme.mq.desktop} {
     display: none;
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  color: ${({ theme }) => theme.color.black};
+  text-decoration: none;
+  margin: 20px 0;
+
+  ${({ theme }) => theme.mq.desktop} {
+    color: ${({ theme }) => theme.color.beige};
+    margin: 0 20px;
   }
 `;

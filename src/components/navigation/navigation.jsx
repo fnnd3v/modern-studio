@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 import {
   Logo,
   OuterWrapper,
   SocialIcons,
   StyledBurger,
+  StyledLink,
   StyledNav,
   Wrapper,
 } from "./navigation.styles";
@@ -32,11 +35,24 @@ const Navigation = () => {
         <Logo src={LogoIcon} isOpen={isOpen} />
         <StyledNav>
           <ul>
-            <li>Oferty</li>
-            <li>Realizacje</li>
-            <li>Zespół</li>
-            <li>Usługi</li>
-            <li>Kontakt</li>
+            <StyledLink onClick={() => setIsOpen(false)} to="/strona-glowna">
+              Strona główna
+            </StyledLink>
+            <StyledLink onClick={() => setIsOpen(false)} to="/oferty">
+              Oferty
+            </StyledLink>
+            <StyledLink onClick={() => setIsOpen(false)} to="/realizacja">
+              Realizacja
+            </StyledLink>
+            <StyledLink onClick={() => setIsOpen(false)} to="/team">
+              Zespół
+            </StyledLink>
+            <StyledLink onClick={() => setIsOpen(false)} to="/uslugi">
+              Usługi
+            </StyledLink>
+            <StyledLink onClick={() => setIsOpen(false)} to="/kontakt">
+              Kontakt
+            </StyledLink>
           </ul>
         </StyledNav>
         <SocialIcons>
