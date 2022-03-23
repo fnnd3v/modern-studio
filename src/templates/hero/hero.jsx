@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+
+import styled from "styled-components";
 
 import { Wrapper } from "./hero.styles";
 

@@ -13,6 +13,7 @@ import {
 import OfferPage from "pages/offer-page/offer-page";
 import Realizations from "pages/realizations/realizations";
 import Team from "pages/team/team";
+import Services from "pages/services/services";
 
 const Root = () => {
   return (
@@ -28,6 +29,7 @@ const Root = () => {
             </Route>
             <Route path="/realizacja" element={<Realizations />} />
             <Route path="/zespol" element={<Team />} />
+            <Route path="/uslugi" element={<Services />} />
           </Routes>
         </MainTemplate>
       </ThemeProvider>

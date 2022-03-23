@@ -120,7 +120,6 @@ export const StyledLink = styled(Link)`
   margin: 20px 0;
 
   ${({ theme }) => theme.mq.desktop} {
-    color: ${({ theme }) => theme.color.beige};
     margin: 0 20px;
   }
 `;

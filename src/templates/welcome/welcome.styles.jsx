@@ -33,24 +33,16 @@ export const TextWrapper = styled.div`
     margin-bottom: 20px;
   }
 
-  &::after,
   &::before {
     content: "";
     position: absolute;
-    background-color: ${({ theme }) => theme.color.black};
-    margin: -20px;
-    right: 0;
+    width: 100px;
+    height: 100px;
     top: 0;
-  }
-
-  &::after {
-    width: 80px;
-    height: 10px;
-  }
-
-  &::before {
-    width: 10px;
-    height: 80px;
+    right: 0;
+    margin: -20px;
+    background-color: ${({ theme }) => theme.color.black};
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 90% 10%, 0 10%);
   }
 
   ${({ theme }) => theme.mq.desktop} {
@@ -65,36 +57,31 @@ export const TextWrapper = styled.div`
 
 export const ImageBox = styled.div`
   position: relative;
-
-  img {
-    width: 90%;
-    margin-top: 20px;
-    align-self: flex-start;
-  }
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: ${({ theme }) => theme.color.beige};
-    margin: -20px;
-    bottom: 0;
-    left: 0;
-  }
+  background-image: url(${({ image }) => image});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 90%;
+  margin-top: 10px;
+  height: 30%;
 
   &::after {
-    width: 80px;
-    height: 10px;
-  }
-
-  &::before {
-    width: 10px;
-    height: 80px;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    margin: -20px;
+    background-color: ${({ theme }) => theme.color.beige};
+    clip-path: polygon(10% 0, 10% 90%, 100% 90%, 100% 100%, 0 100%, 0 0);
   }
 
   ${({ theme }) => theme.mq.desktop} {
     position: absolute;
     width: 60%;
+    height: 70%;
     left: 20%;
     top: 50%;
     transform: translateY(-50%);

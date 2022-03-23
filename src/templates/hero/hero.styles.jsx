@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import HeroImage from "assets/images/0_hero.jpg";
+import HeroImage from "assets/images/4_offer.jpg";
 
 export const Wrapper = styled.div`
   width: 100vw;
@@ -11,14 +11,14 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 40px;
+  position: relative;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-    url(${HeroImage});
-  background-position: center;
+  background: url(${HeroImage});
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 
-  color: ${({ theme }) => theme.color.beige};
+  color: ${({ theme }) => theme.color.black};
 
   h1 {
     font-family: ${({ theme }) => theme.font.family.cormorant};
