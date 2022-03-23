@@ -52,6 +52,7 @@ export const PersonWrapper = styled.div`
   img {
     width: 100%;
     margin-bottom: 30px;
+    max-height: 400px;
   }
 
   h4 {
@@ -80,10 +81,12 @@ export const PersonWrapper = styled.div`
   ${({ theme }) => theme.mq.desktop} {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+
+    height: unset;
 
     img {
       width: 45%;
+      max-width: 900px;
     }
 
     div {
