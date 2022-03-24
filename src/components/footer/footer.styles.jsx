@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { NavLink } from "react-router-dom";
+
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -40,8 +42,11 @@ export const SocialIcons = styled.div`
 export const LinksWrapper = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
+`;
 
-  p {
-    margin: 7px;
-  }
+export const StyledNavLink = styled(NavLink)`
+  margin: 7px;
+  color: ${({ theme }) => theme.color.black};
+  text-decoration: none;
+  cursor: pointer;
 `;

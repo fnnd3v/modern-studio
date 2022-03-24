@@ -4,6 +4,7 @@ import {
   HeaderWrapper,
   LinksWrapper,
   SocialIcons,
+  StyledNavLink,
   Wrapper,
 } from "./footer.styles";
 
@@ -22,11 +23,11 @@ const Footer = () => {
         </SocialIcons>
       </HeaderWrapper>
       <LinksWrapper>
-        <NavLink to="/oferty/mieszkania">Oferta</NavLink>
-        <NavLink to="/realizacja">Realizacje</NavLink>
-        <NavLink to="/zespol">Zespół</NavLink>
-        <NavLink to="/uslugi">Usługi</NavLink>
-        <NavLink to="/kontakt">Kontakt</NavLink>
+        <StyledNavLink to="/oferty/mieszkania">Oferta</StyledNavLink>
+        <StyledNavLink to="/realizacja">Realizacje</StyledNavLink>
+        <StyledNavLink to="/zespol">Zespół</StyledNavLink>
+        <StyledNavLink to="/uslugi">Usługi</StyledNavLink>
+        <StyledNavLink to="/kontakt">Kontakt</StyledNavLink>
       </LinksWrapper>
     </Wrapper>
   );
