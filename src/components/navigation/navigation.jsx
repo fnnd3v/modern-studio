@@ -12,7 +12,7 @@ import {
 
 import FacebookIcon from "assets/icons/facebook.png";
 import InstagramIcon from "assets/icons/instagram.png";
-import LogoIcon from "assets/icons/image1.svg";
+import LogoIcon from "assets/icons/logo.svg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -12,8 +12,8 @@ export const OuterWrapper = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 `;
 
 export const Wrapper = styled.div`
@@ -28,7 +28,6 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  z-index: 9999;
 
   ${({ theme }) => theme.mq.desktop} {
     display: flex;
@@ -87,6 +86,7 @@ export const StyledBurger = styled.button`
   flex-direction: column;
   padding: 10px;
   justify-content: space-around;
+  background-color: ${({ theme }) => theme.color.black};
   width: 2rem;
   height: 2rem;
   background: transparent;
@@ -102,7 +102,7 @@ export const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ theme }) => theme.color.beige};
+    background-color: ${({ theme }) => theme.color.black};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -115,9 +115,11 @@ export const StyledBurger = styled.button`
 `;
 
 export const StyledLink = styled(Link)`
-  color: ${({ theme }) => theme.color.black};
+  color: black;
   text-decoration: none;
   margin: 20px 0;
+  font-weight: bold;
+  text-shadow: ${({ theme }) => theme.font.shadow};
 
   ${({ theme }) => theme.mq.desktop} {
     margin: 0 20px;

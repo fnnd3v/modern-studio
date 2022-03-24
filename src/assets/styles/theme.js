@@ -9,6 +9,7 @@ export const theme = {
     brown: "hsl(355,13%,20%)",
   },
   font: {
+    shadow: "5px 5px 10px hsla(0, 0%, 0%, 0.15)",
     size: {
       heading: "5rem",
       headingMobile: "2.8rem",

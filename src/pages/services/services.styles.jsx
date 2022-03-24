@@ -100,8 +100,11 @@ export const ServiceWrapper = styled.div`
   div {
     width: 50px;
     height: 50px;
-    background-color: antiquewhite;
+    border: 1px solid ${({ theme }) => theme.color.beige};
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h5 {
