@@ -9,6 +9,7 @@ import {
 
 import FacebookIcon from "assets/icons/facebook.png";
 import InstagramIcon from "assets/icons/instagram.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,11 +22,11 @@ const Footer = () => {
         </SocialIcons>
       </HeaderWrapper>
       <LinksWrapper>
-        <p>Oferty</p>
-        <p>Realizacje</p>
-        <p>Zespół</p>
-        <p>Usługi</p>
-        <p>Kontakt</p>
+        <NavLink to="/oferty/mieszkania">Oferta</NavLink>
+        <NavLink to="/realizacja">Realizacje</NavLink>
+        <NavLink to="/zespol">Zespół</NavLink>
+        <NavLink to="/uslugi">Usługi</NavLink>
+        <NavLink to="/kontakt">Kontakt</NavLink>
       </LinksWrapper>
     </Wrapper>
   );

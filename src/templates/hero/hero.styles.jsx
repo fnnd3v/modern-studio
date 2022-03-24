@@ -18,7 +18,8 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 
-  color: ${({ theme }) => theme.color.black};
+  color: black;
+  text-align: right;
 
   h1 {
     font-family: ${({ theme }) => theme.font.family.cormorant};

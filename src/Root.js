@@ -14,6 +14,7 @@ import OfferPage from "pages/offer-page/offer-page";
 import Realizations from "pages/realizations/realizations";
 import Team from "pages/team/team";
 import Services from "pages/services/services";
+import Contact from "pages/contact/contact";
 
 const Root = () => {
   return (
@@ -30,6 +31,7 @@ const Root = () => {
             <Route path="/realizacja" element={<Realizations />} />
             <Route path="/zespol" element={<Team />} />
             <Route path="/uslugi" element={<Services />} />
+            <Route path="/kontakt" element={<Contact />} />
           </Routes>
         </MainTemplate>
       </ThemeProvider>

@@ -37,7 +37,7 @@ export const SocialIcons = styled.div`
     right: 20px;
   }
 `;
-export const LinksWrapper = styled.div`
+export const LinksWrapper = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
